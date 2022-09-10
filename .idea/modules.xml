@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Enum/Enum.iml" filepath="$PROJECT_DIR$/Enum/Enum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Enum_Exceptions.iml" filepath="$PROJECT_DIR$/.idea/Enum_Exceptions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Laboratorio/Laboratorio.iml" filepath="$PROJECT_DIR$/Laboratorio/Laboratorio.iml" />
+    </modules>
+  </component>
+</project>
