@@ -1,7 +1,8 @@
 package Model;
 
-public class Teacher extends Person{
-    String subject;
+public class Professor extends Person{
+    private String subject;
+    private Monitor monitor;
 
     public String getSubject() {
         return subject;
@@ -19,5 +20,9 @@ public class Teacher extends Person{
         this.monitor = monitor;
     }
 
-    Monitor monitor;
+    public Professor(String name,String subject, Monitor monitor) {
+        setName(name);
+        this.subject = subject;
+        this.monitor = monitor;
+    }
 }
