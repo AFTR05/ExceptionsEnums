@@ -1,10 +1,22 @@
 package Model;
 
+import java.util.ArrayList;
+
 public class Monitor extends Person{
     private String career;
     private int ageInCompany;
 
     private int amountLoan;
+
+    private double totalIncomeLoan;
+
+    public double getTotalIncomeLoan() {
+        return totalIncomeLoan;
+    }
+
+    public void setTotalIncomeLoan(double totalIncomeLoan) {
+        this.totalIncomeLoan = totalIncomeLoan;
+    }
 
     public int getAgeInCompany() {
         return ageInCompany;

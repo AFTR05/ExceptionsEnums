@@ -1,5 +1,6 @@
 package Controller;
 
+import Model.Loan;
 import Model.Monitor;
 import Service.impl.MonitorService;
 import Service.impl.ProfessorService;
@@ -18,6 +19,7 @@ public class FunctionPerson {
     public void prepareDeleteMonitor(){monitorService.deleteObject();}
     public void prepareUpdateMonitor(){monitorService.update();}
     public void prepareConsultMonitor(){monitorService.consult();}
+    public void preparetotalSalary(){monitorService.totalSalary();}
 //Student---------------------------------------------------------------------------------------------------------------------------------------------------
     public void prepareGenerateStudent(){
         studentService.GenerateProveStudent();
@@ -26,7 +28,8 @@ public class FunctionPerson {
     public void prepareDeleteStudent(){studentService.deleteObject();}
     public void prepareUpdateStudent(){studentService.update();}
     public void prepareConsultStudent(){studentService.consult();}
-//Monitor-------------------------------------------------------------------------------------------------------------------------------------------------
+    public void prepareAmountLoanStudent(){studentService.amountLoanStudent();}
+//professor-------------------------------------------------------------------------------------------------------------------------------------------------
     public void prepareGenerateProfessor(ArrayList<Monitor> listMonitors){professorService.generateProveProfessor(listMonitors);}
     public void prepareCreateProfessor(ArrayList<Monitor> listMonitors){professorService.createProfessor(JOptionPane.showInputDialog("Input the name of the professor"),JOptionPane.showInputDialog("Input the subject of obove teacher"),listMonitors);}
     public void prepareDeleteProfessor(){professorService.deleteObject();}

@@ -1,6 +1,7 @@
 package Service.impl;
 
 import Exceptions.ExceptionInputNum;
+import Model.Loan;
 import Model.Monitor;
 import Service.PersonService;
 
@@ -18,6 +19,14 @@ public class MonitorService implements PersonService {
 
     public void createMonitor(String name,String career,int ageInCompany){
         listMonitor.add(new Monitor(name,career,ageInCompany));
+    }
+
+    public void totalSalary(){
+        String message="Salary of monitors:\n\n";
+        for (int x=0;x<listMonitor.size();x++){
+            message+=listMonitor.get(x).getName()+"      Salary: "+((listMonitor.get(x).getTotalIncomeLoan()*0.2)+((listMonitor.get(x).getTotalIncomeLoan()*0.02)*(listMonitor.get(x).getAgeInCompany()))+"\n");
+        }
+        JOptionPane.showMessageDialog(null,message);
     }
 
     @Override

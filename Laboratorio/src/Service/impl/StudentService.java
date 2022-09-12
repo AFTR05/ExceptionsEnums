@@ -8,7 +8,7 @@ import javax.swing.*;
 import java.util.ArrayList;
 
 public class StudentService implements PersonService {
-    ArrayList <Student> listStudent=new ArrayList<>();
+    public ArrayList <Student> listStudent=new ArrayList<>();
     public void GenerateProveStudent(){
         listStudent.add(new Student("Mariana","Medicine"));
         listStudent.add(new Student("Andres","Software Engineering"));
@@ -17,6 +17,16 @@ public class StudentService implements PersonService {
 
     public void createStudent(String name,String career){
         listStudent.add(new Student(name,career));
+    }
+
+    public void amountLoanStudent(){
+        Student bestStudent=listStudent.get(0);
+        for (int x=0;x<listStudent.size();x++){
+            if (bestStudent.getAmoutLoan()<listStudent.get(x).getAmoutLoan()){
+                bestStudent=listStudent.get(x);
+            }
+        }
+        JOptionPane.showMessageDialog(null,"The student with the most of loans is:\n "+bestStudent.getName()+" with "+bestStudent.getAmoutLoan()+" amount of loans");
     }
 
     @Override

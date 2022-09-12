@@ -7,6 +7,8 @@ public class Object {
     private int stock;
     private int amountLoan;
 
+    private boolean status;
+
     private double price;
 
     public String getName() {
@@ -25,6 +27,14 @@ public class Object {
         this.code = code;
     }
 
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
     public Type getType() {
         return type;
     }
@@ -39,6 +49,14 @@ public class Object {
 
     public void setStock(int stock) {
         this.stock = stock;
+    }
+
+    public boolean getStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
     }
 
     public int getAmountLoan() {
@@ -56,5 +74,6 @@ public class Object {
         this.stock = stock;
         this.amountLoan = 0;
         this.price=price;
+        this.status=true;
     }
 }
